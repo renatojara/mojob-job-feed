@@ -1,0 +1,19 @@
+.vue-treeselect__control {
+  border: none;
+}
+.vue-treeselect svg {
+  fill: black;
+}
+.vue-treeselect__menu-container {
+  width: 380px;
+}
+.vue-treeselect__placeholder {
+  color: black;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+}
+.v-text-field > .v-input__control > .v-input__slot:before,
+.v-text-field > .v-input__control > .v-input__slot:after {
+  content: none;
+}

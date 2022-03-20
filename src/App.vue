@@ -1,30 +1,38 @@
 <template>
-  <div id="app">
-    <router-view />
+  <v-app id="app">
+    <v-app-bar app id="app-bar">
+      <img id="logo" alt="Mojob Logo" src="./assets/mojob_logo_on_light.svg" />
+    </v-app-bar>
 
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-  </div>
+    <v-main>
+      <v-container>
+        <router-view />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Muli, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background: #fafdfd;
 }
-#nav {
-  padding: 30px;
+#app-bar {
+  position: absolute;
+  height: 66px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: none;
 }
-#nav a {
-  font-weight: bold;
-  color: #4f4f4f;
-}
-#nav a.router-link-exact-active {
-  color: #46bbb3;
+
+#logo {
+  position: absolute;
+  width: 105px;
+  height: 56px;
+  left: 4px;
+  top: 5px;
+
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.5));
 }
 </style>
